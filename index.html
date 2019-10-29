@@ -1,0 +1,276 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="Chart.js"></script>
+  <script src="js.js"></script>
+</head>
+<body ng-controller="firstCtrl">
+  <div class="container">
+    <div class="row">
+      <div class="navigation_fon container-fluid">
+        <p class="logo">
+          Marina
+        </p>
+        <p class="logo">
+          Buyakevich
+        </p>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#Personal information">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Technical skill">Technical skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Other">Other</a>
+        </li>
+      </ul>
+    <p class="jun">Junior</p>
+    <p class="front">Front End Developer
+    </p>
+    </div>
+  </div>
+    <div class="row">
+      <div class="main">
+        <h4 id="Personal information">
+          Personal information
+        </h4>
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <th scope="col">&#8226;</th>
+              <td>City</td>
+              <td>: Odessa</td>
+            </tr>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td>Phone/Telegram/Viber/Skype</td>
+              <td><a href="tel:+380634311176">: +380634311176</a></td>
+            </tr>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td>Email</td>
+              <td><a class="a_email" href="mailto:manyunya1011@gmail.com">: manyunya1011@gmail.com</a></td>
+            </tr>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td colspan="2">LinkedIn</td>
+              <td><a class="a_linkedin" href="https://www.linkedin.com/in/marina-buyakevich/" target="_blank">: www.linkedin.com/in/marina-buyakevich</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <img class="main_img" src="img/7.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <p class="skills" id="Technical skill">Technical skills</p>
+      <table class="table table-dark table-borderless table-hover">
+        <tbody>
+            <tr>
+              <th scope="row">Personal skills</th>
+            </tr>
+            <tr>
+              <th scope="row">Languages</th>
+              <td>Russian, Ukrainian – native, English - elementary, German ─ beginner</td>
+            </tr>
+            <tr>
+              <th scope="col">Development</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Languages</th>
+              <td>JavaScript, TypeScript, HTML</td>
+            </tr>
+            <tr>
+              <th scope="row">Technology stack</th>
+              <td>Angular 6, CSS, Bootstrap, Materialize, Foundation, Vue.js, LESS, WordPress, jQuery, AJAX</td>
+            </tr>
+            <tr>
+              <th scope="row">Data base</th>
+              <td>MySQL</td>
+            </tr>
+            <tr>
+              <th scope="row">Other</th>
+              <td>Git, Adobe Photoshop, Avocode, Jira</td>
+            </tr>
+            <tr>
+              <th scope="row">OS</th>
+              <td>Windows, MacOs</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <canvas id="myChart" width="1000" height="300"></canvas>
+    </div>
+    <div class="row">
+      <div class="main_experience" id="Experience">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Experience</th>
+              <th scope="col">5 projects</th>
+              <th scope="col">2 years of experience</th>
+              <th scope="col">Duties</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td>Front End Developer</td>
+              <td>Banda-tech, Odessa</td>
+              <td>Oct, 2018 - Apr, 2019</td>
+              <td>
+                <p>Technology stack: Angular 6, JavaScript, <br>
+                  TypeScript , HTML, CSS, LESS , Bootstrap, Git<br>
+                  Rewriting of product from C# to Angular 6.<br>
+                  Main responsibilities: Creation and development<br>
+                  of product with Angular.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td>Web developer (HTML/CSS-coder)</td>
+              <td>Beauty Line, Odessa</td>
+              <td>July, 2018 - Sept, 2018</td>
+              <td>
+                <p>Technology stack: WordPress, HTML, CSS, MySQL<br>
+                  Design and development of a site with<br>
+                  WordPress for the Odesa beauty salon.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td>Web developer (HTML/CSS-coder)</td>
+              <td>DRS Project, Odessa</td>
+              <td>Apr 2018 - July 2018</td>
+              <td>
+                <p>Technology stack: WordPress, HTML, CSS, MySQL.<br>
+                  Creating and supporting sites of customers.<br>
+                  Main responsibilities: Layout of sites and new <br>
+                  pages, integration of CMS templates, <br>
+                  content administration, product data updating.<br>
+                  Examples:<br>
+                  <a href="https://alexanderdo.com/" target="_blank">https://alexanderdo.com/</a><br>
+                  <a href="https://davidroytman.com/" target="_blank">https://davidroytman.com/</a><br>
+                  <a href="http://drjudaica.com/" target="_blank">http://drjudaica.com/</a><br>
+                  <a href="http://sfarim.ru/" target="_blank">http://sfarim.ru/</a><br>
+                  <a href="http://luxurytalit.com/" target="_blank">http://luxurytalit.com/</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td>Front End Developer</td>
+              <td>Hillel Evo, Odessa</td>
+              <td>May, 2018 - Oct, 2018</td>
+              <td>
+                <p>Technology stack: Vue.js, JavaScript , HTML,<br>
+                  CSS, Jira, Bootstrap, Git<br>
+                  Development of a site on the program Hillel Evo
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">&#8226;</th>
+              <td>Web developer (HTML/CSS-coder)</td>
+              <td>Iclima, Odessa</td>
+              <td>Aug, 2017 - Apr, 2018</td>
+              <td>
+                <p>
+                  Technology stack: WordPress, HTML, CSS, MySQL , Bootstrap.<br>
+                  Internet shop of the climatic equipment.<br>
+                  Main responsibilities: Support existing sites, <br>
+                  content administration, support 4 sites, product data updating.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <p class="skills" id="Education">Education</p>
+      <table class="table table-dark table-borderless table-hover">
+        <tbody>
+          <tr>
+            <th scope="row">Training Courses</th>
+          </tr>
+          <tr>
+            <th scope="row">Institution</th>
+            <td>
+              <a style="color: white" href="https://odessa.ithillel.ua/" target="_blank">Hillel</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="col">Department</th>
+            <td>Front-End Pro</td>
+          </tr>
+          <tr>
+            <th scope="row">Duration</th>
+            <td>Aug 2018 - Dec 2018</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Institution</th>
+            <td>
+              <a style="color: white" href="https://mobios.school/courses-odessa" target="_blank">Mobios</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Department</th>
+            <td>HTML/CSS-coder</td>
+          </tr>
+          <tr>
+            <th scope="row">Duration</th>
+            <td>Nov 2016 - May 2017</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="main_experience" id="Other">
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <th scope="row">Other</th>
+            </tr>
+            <tr>
+              <th scope="row">Institution</th>
+              <td>
+                <a href="http://ffea.ru/" target="_blank">Feodosia Finance Economics Academy</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="col">Department</th>
+              <td>Faculty of Law</td>
+            </tr>
+            <tr>
+              <th scope="col">Degree</th>
+              <td>Master's degree</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
